@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Festival do Açaí</title>
+  <style>
+    body {
+      background-color: rgb(87, 0, 87);
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 200px;
+    }
+    .logo{
+      height: 120px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      color: rgb(128, 0, 128);
+    }
+
+    h2 {
+      color: rgb(128, 0, 128);
+    }
+
+     #menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      overflow: hidden;
+      width: calc(33.33% - 20px); /* 3 cartões por linha */
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+    }
+
+    .card-content p {
+      margin: 10px 0;
+    }
+
+    .card-content .price {
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      font-size: 36px;
+    }
+
+    .card-content .descricao_prato {
+      font-style: italic;
+      color: rgb(49, 49, 49);
+      font-size: 12px;
+    }
+
+    /* Media query para telas menores */
+    @media (max-width: 600px) {
+      .card {
+        width: calc(50% - 20px); /* 2 cartões por linha */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="/LOGO.png" alt="Logo do 5º Festival do Açaí">
+    <h1>BEM VINDO AO <br> 5º FESTIVAL DO AÇAÍ</h1>
+  </header>
+  <div id="menu">
+    <div class="card">
+      <img src="/1.png" alt="Açaí Puro">
+      <div class="card-content">
+        <h2>Açaí com Peixe Frito</h2>
+        <p class="price">R$ 29,00</p>
+        <p class="descricao_prato">Acompanha arroz, macarrão, farinha e açúcar!</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/2.png" alt="Açaí com Frutas">
+      <div class="card-content">
+        <h2>Açaí com Camarão</h2>
+        <p class="price">R$ 24,90</p>
+        <p class="descricao_prato">Acompanha arroz, macarrão, farinha e açúcar!</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="3.png" alt="Açaí com Leite Condensado">
+      <div class="card-content">
+        <h2>Açaí com Charque</h2>
+        <p class="price">R$ 15,00</p>
+        <p class="descricao_prato">Acompanha arroz, macarrão, farinha e açúcar!</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/4.png" alt="Açaí com Frutas">
+      <div class="card-content">
+        <h2>Açaí com Carne</h2>
+        <p class="price">R$ 19,99</p>
+        <p class="descricao_prato">Acompanha arroz, macarrão, farinha e açúcar!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
